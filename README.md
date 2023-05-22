@@ -17,7 +17,6 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-
 Vue Treeview
 Vue Treeview is a customizable treeview component built with Vue.js. It allows you to display hierarchical data in a tree structure with collapsible nodes and checkboxes for selection. This component is useful for creating file explorers, category trees, or any other data representation that requires a hierarchical view.
 
@@ -37,6 +36,7 @@ Import the Vue Treeview component and use it in your Vue component:
 vue
 Copy code
 <template>
+
   <div>
     <TreeView :data="treeData" :title="treeTitle" />
   </div>
@@ -77,6 +77,7 @@ export default {
   },
 };
 </script>
+
 In the example above, we import the TreeView component from the vue-treeview package and use it in our Vue component. We pass the hierarchical tree data as the data prop and optionally provide a title prop for the treeview title.
 
 API
@@ -105,6 +106,7 @@ Import the Vue Treeview component and use it in your Vue component:
 vue
 Copy code
 <template>
+
   <div>
     <TreeView :data="treeData" :title="treeTitle" />
   </div>
@@ -145,6 +147,7 @@ export default {
   },
 };
 </script>
+
 In the example above, we import the TreeView component from the vue-treeview package and use it in our Vue component. We pass the hierarchical tree data as the data prop and optionally provide a title prop for the treeview title.
 
 API
@@ -163,6 +166,7 @@ To use the AddTreeview component, you can import it and include it in your Vue c
 vue
 Copy code
 <template>
+
   <div>
     <AddTreeview />
   </div>
@@ -177,6 +181,7 @@ export default {
   },
 };
 </script>
+
 Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvement, please create an issue on the GitHub repository.
 
