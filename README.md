@@ -112,41 +112,6 @@ Copy code
   </div>
 </template>
 
-<script>
-import TreeView from "vue-treeview";
-
-export default {
-  components: {
-    TreeView,
-  },
-  data() {
-    return {
-      treeData: [
-        {
-          label: "Node 1",
-          selected: false,
-          isOpen: false,
-          children: [
-            {
-              label: "Node 1.1",
-              selected: false,
-            },
-            {
-              label: "Node 1.2",
-              selected: false,
-            },
-          ],
-        },
-        {
-          label: "Node 2",
-          selected: false,
-        },
-      ],
-      treeTitle: "Treeview Example",
-    };
-  },
-};
-</script>
 
 In the example above, we import the TreeView component from the vue-treeview package and use it in our Vue component. We pass the hierarchical tree data as the data prop and optionally provide a title prop for the treeview title.
 
@@ -163,24 +128,6 @@ The AddTreeview component is a dialog-based form that allows you to add new node
 Usage
 To use the AddTreeview component, you can import it and include it in your Vue component:
 
-vue
-Copy code
-<template>
-
-  <div>
-    <AddTreeview />
-  </div>
-</template>
-
-<script>
-import AddTreeview from "vue-treeview/AddTreeview";
-
-export default {
-  components: {
-    AddTreeview,
-  },
-};
-</script>
 
 Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvement, please create an issue on the GitHub repository.
