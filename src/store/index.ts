@@ -53,15 +53,15 @@ export const useTreeviewStore = defineStore("treeview", {
   getters: {},
   actions: {
     addTreeview(treeview) {
-        const id = this.treeviews.length + 1;
-        treeview.id = id;
-        console.log(treeview);
+      const id = this.treeviews.length + 1;
+      treeview.id = id;
+      console.log(treeview);
 
-        treeview.children.forEach((child) => {
-          child.treeview_id = id;
-        });
+      treeview.children.forEach((child) => {
+        child.treeview_id = id;
+      });
 
-        this.treeviews.push(treeview);
+      this.treeviews.push(treeview);
     },
     selectedHandler(treeview: TreeNode) {
       this.updateSelectionState(treeview);

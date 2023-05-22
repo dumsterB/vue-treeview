@@ -42,7 +42,7 @@
 import { defineProps } from "vue";
 import { TreeNode } from "../types/treeview";
 import { useTreeviewStore } from "../store";
-import AddTreeview from './AddTreeview.vue'
+import AddTreeview from "./AddTreeview.vue";
 
 const props = defineProps({
   data: {
