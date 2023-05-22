@@ -33,50 +33,6 @@ yarn add vue-treeview
 Usage
 Import the Vue Treeview component and use it in your Vue component:
 
-vue
-Copy code
-<template>
-
-  <div>
-    <TreeView :data="treeData" :title="treeTitle" />
-  </div>
-</template>
-
-<script>
-import TreeView from "vue-treeview";
-
-export default {
-  components: {
-    TreeView,
-  },
-  data() {
-    return {
-      treeData: [
-        {
-          label: "Node 1",
-          selected: false,
-          isOpen: false,
-          children: [
-            {
-              label: "Node 1.1",
-              selected: false,
-            },
-            {
-              label: "Node 1.2",
-              selected: false,
-            },
-          ],
-        },
-        {
-          label: "Node 2",
-          selected: false,
-        },
-      ],
-      treeTitle: "Treeview Example",
-    };
-  },
-};
-</script>
 
 In the example above, we import the TreeView component from the vue-treeview package and use it in our Vue component. We pass the hierarchical tree data as the data prop and optionally provide a title prop for the treeview title.
 
@@ -102,16 +58,6 @@ npm install vue-treeview
 yarn add vue-treeview
 Usage
 Import the Vue Treeview component and use it in your Vue component:
-
-vue
-Copy code
-<template>
-
-  <div>
-    <TreeView :data="treeData" :title="treeTitle" />
-  </div>
-</template>
-
 
 In the example above, we import the TreeView component from the vue-treeview package and use it in our Vue component. We pass the hierarchical tree data as the data prop and optionally provide a title prop for the treeview title.
 
